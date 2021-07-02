@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link href="/static/main.css" rel="stylesheet">
+
+    <title>Heath Plus | A Disease Detection App</title>
+  </head>
+  <body style="background-color: black;">
+
+    <!-- navbar -->
+    
+    <div>
+      <header class="mb-auto">
+        <div>
+          <h3 class="float-md-start mb-0" style="color: chartreuse;">Health +</h3>
+          <nav class="nav nav-masthead justify-content-center  ">
+            <a class="nav-link active nav_tab lg  my" aria-current="page" href="{{ url_for('main_page') }}">Home</a>
+            <li class="nav-item">
+              <a class="nav-link nav_tab my" href="{{ url_for('about') }}">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav_tab my" href="{{ url_for('contact') }}">Contact</a>
+            </li>
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle nav_tab my" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false ">Check-Ups
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="{{ url_for('bmi') }}">BMI</a></li>
+                <li><a class="dropdown-item" href="{{ url_for('heart') }}">Heart</a></li>
+                <li><a class="dropdown-item" href="{{ url_for('diabetes') }}">Diabetes</a></li>
+                <li><a class="dropdown-item" href="{{ url_for('kidney') }}">Kidney</a></li>
+                <li><a class="dropdown-item" href="{{ url_for('liver') }}">Liver</a></li>
+              </ul>
+            </li>
+
+          </nav>
+        </div>
+      </header>
+      </div>
+
+      <div style="margin: 50px;">
+          <h1 style = "color: chartreuse;">Contacts</h1>
+          <h4 class="text-white">Mr.ABC - 0000000000</h4>
+          <h4 class="text-white">Mr.XYZ - 0000000000</h4>
+          <h4 class="text-white">Mr.QWE - 0000000000</h4>
+
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body>
+    </html>
